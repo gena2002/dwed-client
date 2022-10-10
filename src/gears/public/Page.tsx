@@ -1,6 +1,6 @@
 import {components} from "./components";
 import React from "react";
-import {ITemplate} from "../private/ITemplate";
+import {ITemplate} from "../models/ITemplate";
 
 type Props = {
     templates: ITemplate[],

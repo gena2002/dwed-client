@@ -1,6 +1,6 @@
 import {createContext} from 'react'
 
-import Store from "../stores/store";
+import Store from "../stores/Store";
 
 interface State {
     store: Store,

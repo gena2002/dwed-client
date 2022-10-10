@@ -1,9 +1,9 @@
 import React from 'react';
-import {IRoute} from "../private/IRoute";
+import {IRoute} from "../models/IRoute";
 import {Page, RenderRoutes} from "../index";
-import {ITemplate} from "../private/ITemplate";
+import {ITemplate} from "../models/ITemplate";
 
-export const routes_template = (routers: IRoute[], templates?: ITemplate[]) => {
+const routes_template = (routers: IRoute[], templates?: ITemplate[]) => {
     const template = {
         templates: {
             body: templates !== undefined ? <Page templates={templates}/> : <></>
@@ -15,3 +15,5 @@ export const routes_template = (routers: IRoute[], templates?: ITemplate[]) => {
 
     return [template.templates, template.routers];
 }
+
+export default routes_template;
